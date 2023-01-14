@@ -25,9 +25,19 @@
                 </div>
 
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Works</a>
+                    
+                    <div class="responsive-for-mobile">
+                        <div class="nav-links">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Works</a>
+                        </div>
+                    </div>
+
+                    <div class="click-able-menu">
+                        &#9868;
+                    </div>
+
                     <div class="profile-img">
                         <img src="./images/icons/profile.png" alt="">
                     </div>
@@ -49,7 +59,7 @@
 
                 <h3 class="heading">Top player</h3>
 
-                <div class="row payer-row">
+                <div class="row player-row">
                     <div class="player">
                         <img src="./images/players/player-1.png" alt="Image">
                         <p class="name">Player 1</p>
@@ -210,6 +220,17 @@
             <p>All right reverse &copy; 2023 <a href="#">Programing Hero</a></p>
         </div>
     </footer>
+
+
+    <script>
+        let clickAbleBtn = document.querySelector('.click-able-menu');
+
+        let mobileMenu = document.querySelector('.responsive-for-mobile')
+
+        clickAbleBtn.addEventListener('click', function(){
+            mobileMenu.classList.toggle('d-block')
+        })
+    </script>
 
 </body>
 
